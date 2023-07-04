@@ -1,0 +1,5 @@
+package br.edu.atitus.pooavancado.CadUsuario.services;
+
+public interface PedidoService {
+
+}

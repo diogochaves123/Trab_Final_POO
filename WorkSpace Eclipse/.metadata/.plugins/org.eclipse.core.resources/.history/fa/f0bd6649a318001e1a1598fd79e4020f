@@ -1,0 +1,5 @@
+package br.edu.atitus.pooavancado.CadUsuario.Entities;
+
+public class Pedido {
+
+}
