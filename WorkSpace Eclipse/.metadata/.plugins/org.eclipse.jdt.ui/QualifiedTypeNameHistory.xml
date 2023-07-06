@@ -3,5 +3,12 @@
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.CrossOrigin"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="br.edu.atitus.pooavancado.CadUsuario.Entities.GenericEntity"/>
+    <fullyQualifiedTypeName name="br.edu.atitus.pooavancado.CadUsuario.repositories.PedidoRepository"/>
+    <fullyQualifiedTypeName name="br.edu.atitus.pooavancado.CadUsuario.controllers.GenericController"/>
     <fullyQualifiedTypeName name="br.edu.atitus.pooavancado.CadUsuario.Entities.Pedido"/>
+    <fullyQualifiedTypeName name="br.edu.atitus.pooavancado.CadUsuario.controllers.PedidoController"/>
+    <fullyQualifiedTypeName name="br.edu.atitus.pooavancado.CadUsuario.services.PedidoService"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
 </qualifiedTypeNameHistroy>

@@ -22,6 +22,4 @@ public class LoginPayload {
 		this.password = password;
 	}
 	
-	
-
 }

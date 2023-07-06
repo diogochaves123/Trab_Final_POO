@@ -40,7 +40,6 @@ public class AuthController {
 		Usuario usuarioNovo = new Usuario();
 		usuarioNovo.setNome(signup.getNome());
 		usuarioNovo.setEmail(signup.getEmail());
-		usuarioNovo.setPedido(signup.getPedido());
 		usuarioNovo.setStatus(true);
 		String password = gerarSenhaAleatoria(10);
 		usuarioNovo.setPassword(new BCryptPasswordEncoder().encode(password));

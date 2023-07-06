@@ -1,22 +1,20 @@
 package br.edu.atitus.pooavancado.CadUsuario.Entities;
-
-public class Pedido {
-
-	private long ID;
+import java.util.Date;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+@Entity
+@Table(name = "pedido")
+public class Pedido extends GenericEntity {
 	
+	@Column(nullable = true)
 	private Date data;
 	
+	@Column(nullable = false)
 	private Produto produto;
 	
+	@Column(nullable = false)
 	private Double quantidade;
-
-	public long getID() {
-		return ID;
-	}
-
-	public void setID(long iD) {
-		ID = iD;
-	}
 
 	public Date getData() {
 		return data;
@@ -41,6 +39,4 @@ public class Pedido {
 	public void setQuantidade(Double quantidade) {
 		this.quantidade = quantidade;
 	}
-	
-	
 }
