@@ -790,3 +790,55 @@ java.util.concurrent.TimeoutException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+
+!ENTRY org.eclipse.core.jobs 4 2 2023-07-05 22:41:04.121
+!MESSAGE An internal error occurred during: "Launching CadUsuarioApplication".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "com.sun.org.apache.xerces.internal.dom.DeferredDocumentImpl.createDeferredElement(String, String)" because "this.fDeferredDocumentImpl" is null
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractDOMParser.startElement(AbstractDOMParser.java:1079)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractDOMParser.emptyElement(AbstractDOMParser.java:1150)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.emptyElement(XMLDTDValidator.java:752)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1387)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$ContentDriver.scanRootElementHook(XMLDocumentScannerImpl.java:1292)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:3079)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:836)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342)
+	at org.eclipse.jdt.launching.JavaRuntime.newRuntimeClasspathEntry(JavaRuntime.java:830)
+	at org.eclipse.jdt.launching.StandardClasspathProvider.recoverRuntimePath(StandardClasspathProvider.java:120)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.computeUnresolvedClasspath(MavenRuntimeClasspathProvider.java:148)
+	at org.eclipse.jdt.internal.launching.RuntimeClasspathProvider.computeUnresolvedClasspath(RuntimeClasspathProvider.java:60)
+	at org.eclipse.jdt.launching.JavaRuntime.computeUnresolvedRuntimeClasspath(JavaRuntime.java:1647)
+	at org.eclipse.jdt.launching.AbstractJavaLaunchConfigurationDelegate.getClasspathAndModulepath(AbstractJavaLaunchConfigurationDelegate.java:463)
+	at org.eclipse.jdt.launching.JavaLaunchDelegate.getVMRunnerConfiguration(JavaLaunchDelegate.java:132)
+	at org.eclipse.jdt.launching.JavaLaunchDelegate.launch(JavaLaunchDelegate.java:160)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:806)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:717)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.launching 4 150 2023-07-05 22:41:04.229
+!MESSAGE Unable to restore classpath entry.
+!STACK 0
+org.xml.sax.SAXException: FWK005 parse may not be called while parsing.
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:277)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342)
+	at org.eclipse.jdt.launching.JavaRuntime.newRuntimeClasspathEntry(JavaRuntime.java:830)
+	at org.eclipse.jdt.launching.StandardClasspathProvider.recoverRuntimePath(StandardClasspathProvider.java:120)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.computeUnresolvedClasspath(MavenRuntimeClasspathProvider.java:148)
+	at org.eclipse.jdt.internal.launching.RuntimeClasspathProvider.computeUnresolvedClasspath(RuntimeClasspathProvider.java:60)
+	at org.eclipse.jdt.launching.JavaRuntime.computeUnresolvedRuntimeClasspath(JavaRuntime.java:1647)
+	at org.eclipse.jdt.launching.AbstractJavaLaunchConfigurationDelegate.getClasspathAndModulepath(AbstractJavaLaunchConfigurationDelegate.java:463)
+	at org.eclipse.jdt.launching.JavaLaunchDelegate.getVMRunnerConfiguration(JavaLaunchDelegate.java:132)
+	at org.eclipse.jdt.launching.JavaLaunchDelegate.launch(JavaLaunchDelegate.java:160)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:806)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:717)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
